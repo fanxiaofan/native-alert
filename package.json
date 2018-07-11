@@ -1,0 +1,12 @@
+{
+  "name": "native-alert",
+  "version": "1.0.0",
+  "description": "a rn lib test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ffy",
+  "license": "ISC"
+}
