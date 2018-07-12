@@ -20,7 +20,7 @@ RCT_EXPORT_METHOD(showAlert:(NSString *)title msg:(NSString *)msg sure:(NSString
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
     
     if (sure) {
-        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:sure style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             if (sureCallback) {
                 sureCallback(@[@[@"sure"]]);
             }
@@ -29,7 +29,7 @@ RCT_EXPORT_METHOD(showAlert:(NSString *)title msg:(NSString *)msg sure:(NSString
     }
     
     if (cancel) {
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancel style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             if (cancelCallback) {
                 cancelCallback(@[@[@"cancel"]]);
             }
