@@ -14,6 +14,9 @@
 RCT_EXPORT_MODULE(FFTBridge);
 
 RCT_EXPORT_METHOD(showAlert:(NSString *)title msg:(NSString *)msg sure:(NSString *)sure cancel:(NSString *)cancel sureEvent:(RCTResponseSenderBlock)sureCallback cancelEvent:(RCTResponseSenderBlock)cancelCallback){
+    
+    NSLog(@"hello showAlert");
+    
     UIViewController *controller = [UIApplication sharedApplication].delegate.window.rootViewController;
     
     
